@@ -1,5 +1,5 @@
 package com.example.catfacts.viewModel
 
-data class FactsViewModel(
+data class CatFactsViewModel(
     val fact: String
 )
