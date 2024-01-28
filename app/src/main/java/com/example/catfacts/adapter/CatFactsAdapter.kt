@@ -6,7 +6,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.example.catfacts.R
 import com.example.catfacts.viewModel.CatFactsViewModel
 
-class CatFactsAdapter(private val dataSet: Array<CatFactsViewModel>) :
+class CatFactsAdapter(private val dataSet: ArrayList<CatFactsViewModel>) :
     RecyclerView.Adapter<CatFactsAdapter.ViewHolder>() {
 
     class ViewHolder(view: View) : RecyclerView.ViewHolder(view) {
