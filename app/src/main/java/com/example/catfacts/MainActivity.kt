@@ -13,7 +13,10 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+    }
 
+    // function to fetch the facts from the internet
+    private fun fetchCatFactsData() {
         val call = ApiClient.apiService.getAllCatFacts()
 
         call.enqueue(object : Callback<ArrayList<CatFacts>> {
